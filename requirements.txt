@@ -1,0 +1,4 @@
+streamlit==1.45.1
+scipy==1.15.3
+numpy==2.2.6
+altair==5.5.0

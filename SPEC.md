@@ -204,4 +204,10 @@ If time is limited before November 23, prioritize correct calculations, both mod
 - **Time and scope:** Extra statistical tests or plots could delay the working app. Finish and verify the agreed first-version features before considering additions.
 - **Deployment and dependencies:** Package versions or Streamlit Community Cloud settings might cause the hosted app to behave differently from the local version. Pin dependencies, keep setup instructions, run tests in GitHub Actions, and check the deployed app with the default example.
 
-Do not start implementing code until the user approves the final design and requests implementation. This specification is the planning deliverable.
+The original proposal specification served as the planning deliverable; implementation is now in progress.
+
+## 14. Checkpoint update (November 15, 2026)
+
+Implementation has begun. The original requirements above remain the core project. In addition, the checkpoint implementation includes an optional effect-size sensitivity plot: with the selected sample size and alpha held fixed, show power over a bounded range of assumed Cohen's d values. The original Power vs. Sample Size graph remains the main chart. Only this additional plot is planned for the checkpoint; the two-sample test assumptions and the search algorithm do not change.
+
+The checkpoint evidence and testing limitations are in `CHECKPOINT.md`. The runnable code is in `app.py` and `power_calc.py`; execute `python checkpoint_demo.py` for a short non-UI demonstration or `streamlit run app.py` for the full application. This checkpoint update replaces the earlier note about waiting to start implementation.
